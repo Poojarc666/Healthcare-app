@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#343f"
+    tools:context=".Main2Activity">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:hint="name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/emailid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/emailid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="39dp"
+        android:ems="10"
+        android:hint="emailid"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/doctorname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/doctorname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="167dp"
+        android:layout_marginBottom="6dp"
+        android:ems="10"
+        android:hint="doctorname"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/city"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailid" />
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="153dp"
+        android:ems="10"
+        android:hint="city"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/doctorname" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="153dp"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="58dp"
+        android:text="back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ok"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginBottom="58dp"
+        android:text="ok"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+</android.support.constraint.ConstraintLayout>
